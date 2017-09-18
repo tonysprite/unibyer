@@ -1,0 +1,32 @@
+.right_inner_content,.right_inner_item{
+	background-color:#ffffff;
+	margin-left:31px;
+	padding-bottom: 15px;
+}
+.right_inner_content{
+	width:967px;
+	height:626px;
+	margin-top:40px;
+	padding-bottom: 124px;
+}
+.right_inner_title{
+	margin-left:29px;
+	padding-top:18px;
+	color:#5b5b5b;
+	font-size:15px;
+}
+.add_address_div{
+	line-height:34px;
+	height:34px;
+	margin-top:25px;
+}
+.right_inner_item,.add_address_div{
+	padding-left:85px;
+}
+.add_address_div,.form_label{
+	color:#666667;
+	font-size:14px;
+}
+.decoration{
+	color:#2c2e83
+}

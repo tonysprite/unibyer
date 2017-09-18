@@ -1,0 +1,271 @@
+.right_inner_content,.right_inner_item{
+	background-color:#ffffff;
+	margin-left:31px;
+	padding-bottom: 15px;
+}
+.right_inner_content{
+	width:967px;
+	margin-top:40px;
+}
+.right_inner_title{
+	margin-left:29px;
+	padding-top:18px;
+	color:#2c2e83;
+	font-size:15px;
+}
+.search_div{
+	margin-left:29px;
+	font-size:14px;
+	color:#666667;
+	height:50px;
+	line-height:50px;
+	width:908px;
+}
+.search_left{
+	float:left;
+	text-align:left;
+}
+
+.search_left a{
+	color:#666667;
+	margin-right:32px;
+}
+
+.search_left .active{
+	color:#2c2e83;
+	font-weight:bold;
+}
+.search_right{
+	float:right;
+	text-align:right;
+}
+input[name=search_order_input]{
+	width:200px;
+	height:30px;
+	font-size:13px;
+}
+.search_order_btn{
+	width:54px;
+	height:34px;
+	border:1px solid #cccccc;
+	float:right;
+	background-color:#ebebeb;
+	text-align:center;
+	margin-top: 8px;
+	cursor:pointer;	
+}
+.order_item,.order_title_list{
+	background-color:#f8f8f8;
+	width:908px;
+	height:35px;
+	line-height:35px;
+}
+.order_list{
+	width:908px;
+}
+.order_title_list,.order_list{
+	margin:auto;
+	margin-top:10px;
+}
+.order_title_list span img{
+	margin-left:3px;
+}
+.order_create_time,.all_order{
+	margin-left:27px;
+}
+.all_order{
+	cursor:pointer;
+	margin-right:196px;
+}
+.order_detail{
+	margin-right:136px;
+}
+.order_receiver{
+	margin-right:60px;
+}
+.order_price{
+	margin-right:55px;
+}
+.order_status{
+	margin-right:46px;
+	cursor:pointer;
+}
+.order_item{
+	border:1px solid #cccccc;
+}
+.order_num,.order_create_time{
+	font-size:14px;
+	color:#666667
+}
+.order_create_time{
+	margin-right:22px;
+}
+.order_content span{
+	
+}
+.goods_detail{
+	line-height:121px;
+}
+input[name='pay_btn']{
+	border:1px solid #2c2e83;
+	border-radius:2px;
+	color:#2c2e83;
+	font-size:13px;
+	width:85px;
+	height:24px;
+	background-color:#ffffff;
+	margin-top: 50px;
+}
+input[name='comment_btn']{
+	border:1px solid #5d9300;
+	border-radius:2px;
+	color:#5d9300;
+	font-size:13px;
+	width:85px;
+	height:24px;
+	background-color:#ffffff;
+	margin-top: 50px
+}
+input[name='confirm_btn']{
+	border:1px solid #ff0000;
+	border-radius:2px;
+	color:#ff0000;
+	font-size:13px;
+	width:85px;
+	height:24px;
+	background-color:#ffffff;
+	margin-top: 50px;
+}
+.goods_title,.goods_num,.receiver_name{
+	line-height:66px;
+}
+.goods_price_num{
+	line-height: 30px;
+    margin-top: 26px;
+}
+.cancel_btn{
+	color:191919;
+}
+.order_item {
+	height:158px;
+	margin-bottom:42px;
+}
+.order_content{
+	background-color:#ffffff;
+	height:122px;
+	font-size:14px;
+}
+.order_content img{
+	margin:10px;
+}
+.order_content img,.order_content span{
+	float:left;
+}
+.order_content span{
+	text-align: center;
+	color:#666667;
+}
+.goods_title{
+	margin-left:20px;
+	margin-right:236px;
+	width:57px;
+	overflow:break;
+}
+.receiver_name,.goods_price,.goods_detail{
+	width:99px;
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+	text-align:center;
+	height:100%;
+}
+.goods_price,.goods_detail{
+	border-left:none;
+	text-align:center;
+	height:100%;
+}
+.goods_num{
+	margin-right:37px;
+}
+
+.goods_price *{
+	width: 90%;
+    margin-left: 5%;
+}
+.goods_price .goods_price_num,.goods_price .goods_price_way{
+	color:#b5b5b6	
+}
+.goods_price_num{
+	border-bottom:1px solid #cccccc;
+}
+.goods_operation{
+	overflow: hidden;
+    width: 100px;
+}
+.cancel_btn{
+	color:#191919
+}
+.select_div,.status_div{
+	position: relative;
+    z-index: 999;
+    height: 0px;
+    margin-left: 29px;
+	color: #666667;
+    font-size: 14px;
+}
+.status_div{
+	left: 697px;
+}
+.time_select,.status_select{	
+    background-color: #ffffff;
+    width: 147px;
+	border: 1px solid #cccccc;
+	padding: 5px 0 5px 0;
+	box-shadow: -4px 4px 0px -3px;
+}
+.time_select li,.status_select li{
+	padding-left:21px;
+	line-height:29px;
+	cursor:pointer;
+}
+.time_select .selected,.status_select .selected{
+	color:#f06600;
+	background:url("../image/selected.png") no-repeat;
+	margin-left: 0px;
+    padding-left: 20px;
+    background-position: 4px;
+}
+.time_select li:hover,.status_select li:hover{
+	background:#eeeeee
+}
+.page_div{
+	width:917px;
+	margin:auto;
+	height:32px;
+	text-align:right;
+}
+.prev_page,.next_page{
+	
+    border: 1px solid #cccccc;
+    padding: 1px 10px;
+    border-radius: 2px;
+}
+.prev_page{
+	background:url(../image/page_left.png) no-repeat;
+	background-position: 3px 5px;
+}
+.disabled{
+	color:#b6b5b5
+}
+.page{
+	cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    text-align: center;
+    padding: 1px 11px;
+	border-radius: 2px;
+}
+.current_page{
+	padding: 1px 11px;
+	color:#ff0000
+}
