@@ -22,6 +22,7 @@
 }
 .add_address_button{
 	width:109px;
+	cursor:pointer;
 }
 .right_inner_item,.add_address_button{
 	border:1px solid #dddddd;
@@ -98,4 +99,97 @@
 }
 .item_row,.item_title{
 	margin-left:39px;
+}
+.box{
+	width:768px;
+	height:460px;
+	border:5px solid #c2c2c2;
+	position:relative;
+	top:-30em;
+	left:5.2em;
+	background-color:#ffffff;
+}
+.box_inner{
+	border:1px solid #b1b1b1;
+	width:100%;
+	height:100%;
+}
+.box_header{
+	background-color:#f3f4f3;
+	height:32px;
+	width:100%;
+	
+}
+.float_right{
+	float:right;
+}
+.float_left{
+	float:left;
+}
+.box_header_title{
+	font-size:14px;
+	color:#666667;
+	padding:10px;
+	line-height:100%;
+}
+.box_header_title a{
+	color:inherit;
+}
+.box_body{
+	margin-top:33px;
+}
+.box_body_row{
+	height:34px;
+	font-size:14px;
+	color:#666667;
+	margin-bottom:23px;
+}
+.box_body_row label{
+	width:108px;
+	display:inline-block;
+	text-align:right;
+}
+.box_body_row span{
+	color:#e33735;
+}
+.box_body_row select{
+	height:inherit;
+}
+.user_name{
+	height:28px;
+	display:inline-block;
+	width:227px
+	
+}
+.user_name_button{
+	color:#e33735;
+	font-size:12px;
+	background-color:#ffebeb;
+	border:1px solid #ffbdbd;
+	height:100%;
+}
+.submit_address_button{
+	width:112px;
+	height:28px;
+	background-color:#f5f5f5;
+	border:1px solid #dddddd;
+	border-radius:3px;
+	color:#272727;
+	font-size:14px;
+}
+.address{
+	width:614px;
+}
+input[name=mobile],input[name=tel]{
+	width:186px;
+}
+input[name=email]{
+	width:228px;
+}
+.box_body_row .tel_label{
+	width:85px;
+	text-align:center;
+}
+.box_body_row select{
+	width:120px;
 }
