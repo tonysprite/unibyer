@@ -104,9 +104,10 @@
 	width:768px;
 	height:460px;
 	border:5px solid #c2c2c2;
-	position:relative;
-	top:-30em;
-	left:5.2em;
+	position: absolute;
+    top: 1em;
+    left: 21.2em;
+	z-index:9999;
 	background-color:#ffffff;
 }
 .box_inner{

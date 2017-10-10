@@ -160,7 +160,7 @@
 						<span class="add_address_text">您已创建 2 个收货地址，最多可创建10个收货地址</span>
 					</div>
 					<div class="right_inner_list">
-					<div class="right_inner_item">
+					<div class="right_inner_item"  id="address_item_1">
 						<div class="close_div">
 							<a href="javascript:void(0)">×</a>
 						</div>
@@ -205,13 +205,13 @@
 									默认地址
 								</div>
 								<div class="button_div_right">
-									<a href="#">设为默认</a>
-									<a href="#">编辑</a>
+									<a href="javascript:setDefault(1);" class="hidden">设为默认</a>
+									<a href="javascript:openBox();">编辑</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="right_inner_item">
+					<div class="right_inner_item" id="address_item_2">
 						<div class="close_div">
 							<a href="javascript:void(0)">×</a>
 						</div>
@@ -251,13 +251,13 @@
 								</tr>
 							</table>
 							<div class="button_div">
-								<!--<div class="button_div_left">
+								<div class="button_div_left hidden">
 									<img src="../Public/image/default.png"/>
 									默认地址
-								</div>-->
+								</div>
 								<div class="button_div_right">
-									<a href="#">设为默认</a>
-									<a href="#">编辑</a>
+									<a href="javascript:setDefault(2);">设为默认</a>
+									<a href="javascript:openBox();">编辑</a>
 								</div>
 							</div>
 						</div>
@@ -411,6 +411,17 @@
 			$(".submit_address_button").on("click",function(){
 				close_box();
 			});
+			$(".close_div a").on("click",function(){
+				$(this).parent().parent().remove();
+			});
+			function setDefault(id){
+				$(".button_div_left").addClass("hidden");
+				$('.button_div_right').find('a:first').each(function(){
+					$(this).removeClass("hidden")
+				});
+				$("#address_item_"+id).find('.item_row').find('.button_div_left').removeClass("hidden");
+				$("#address_item_"+id).find('.item_row').find('.button_div_right').find('a:first').addClass("hidden");
+			}
 		</script>
 	</body>
 </html>
