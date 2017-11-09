@@ -12,15 +12,19 @@ body{
 	width:1237px;
 	margin:auto;
 	border:0px;
-	font-family: 'Microsoft YaHei', 微软雅黑, arial;
+	font-family: font-fzybjt;
 	overflow-x:hidden;
+}
+*{
+		font-family: font-fzybjt;
+		text-shadow:0.1px 0 #000000;
 }
 @font-face
 {
 font-family: myFirstFont;
 src:url(../fonts/FZNBSJW.TTF);
 font-family: font-fzybjt;
-src:url(../fonts/方正硬笔行书简体.ttf)
+src:url(../fonts/FZXH1JW.TTF)
 }
 
 
