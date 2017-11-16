@@ -105,8 +105,11 @@
 .form_label,.form_input{
 	display:inline-block;
 }
+.form_div{
+	height:38px;
+}
 .form_div.first{
-	height:14.58px;
+	
 	margin-top:47px;
 	font-size:14.58px;
 	color:#666667;
@@ -115,7 +118,7 @@
 	width:195px;
 	height:36px;
 }
-.form_input_inner input[type=text]{
+.form_input_inner input[type=text],.form_input_inner input[type=password]{
 	border:1px solid #cccccc;
 	border-right:2px solid #cccccc;
 	height:34px;
@@ -155,4 +158,56 @@
 	line-height:31px;
 	text-align:center;
 	cursor:pointer;
+}
+.desc{
+	color:#515151;
+	font-size:14px;
+	opacity:0.53;
+}
+.form_input .low,.form_input .middle,.form_input .high{
+	float:left;
+	width:39px;
+	height:15px;
+	line-height:15px;
+	color:#ffffff;
+	text-align:center;
+	font-size:12px;
+	margin-right:1px;
+}
+.low{
+	background-color:#fed100
+}
+.middle{
+	background-color:#f1830a
+}
+.high{
+	background-color:#cccccc
+}
+.low span,.middle span,.high span{
+	display:none;
+}
+.checked span{
+	display:inline;
+}
+.form_div.second{
+	height:15px;
+	margin-top:10px;
+}
+.second *{
+	height:inherit;
+}
+.third{
+	margin-top:19px;
+}
+
+.form_div.fourth{
+	margin-top:43px;
+}
+.form_div.fifth{
+	margin-top:25px;
+	height:31px;
+}
+.form_div.fifth *{
+	height:inherit;
+	display:inline-block;
 }

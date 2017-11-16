@@ -2,9 +2,9 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8">
     
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>个人中心－修改密码1 </title>
+    <title>个人中心－修改密码2 </title>
 	<link href="../Public/css/ucenter_base.css" type="text/css" rel="stylesheet"/>	
-	<link href="../Public/css/change_pwd_1.css" type="text/css" rel="stylesheet"/>
+	<link href="../Public/css/change_pwd_2.css" type="text/css" rel="stylesheet"/>
 	</head>
 <body>
 <!--header start-->
@@ -156,26 +156,37 @@
 						修改登录密码
 					</div>	
 					<div class="process_bar_div">
-						<img src="../Public/image/process_bar.jpg"/>
+						<img src="../Public/image/process_bar_2.jpg"/>
 					</div>
 					<div class="form_div first">
-						<div class="form_label">已验证手机：</div>
-						<div class="form_input">135*****725</div>
-					</div>
-					<div class="form_div first">
-						<div class="form_label">请填写手机验证码：</div>
+						<div class="form_label">新的登录密码：</div>
 						<div class="form_input">
 							<div class="form_input_inner">
-								<input type="text" name="tel"/>
+								<input type="password" name="password"/>
 							</div>						
 						</div>
-						<div class="form_input">
-							<div class="form_input_inner_btn font_normal">
-								获取短信验证码
-							</div>						
+						<div class="form_input desc">
+							6-20个字符，可由大小写英文、数字或符号组成				
 						</div>
 					</div>
-					<div class="form_div first">
+					<div class="form_div second">
+						<div class="form_label"> </div>
+						<div class="form_input">
+							<div class="low"><span>低</span></div>
+							<div class="middle checked"><span>中</span></div>		
+							<div class="high"><span>高</span></div>							
+						</div>
+					</div>
+					<div class="form_div third">
+						<div class="form_label">请再输入一次密码：</div>
+						<div class="form_input">
+							<div class="form_input_inner">
+								<input type="password" name="password1"/>
+							</div>						
+						</div>
+
+					</div>
+					<div class="form_div first fourth">
 						<div class="form_label">验证码：</div>
 						<div class="form_input">
 							<div class="form_input_inner">
@@ -192,7 +203,7 @@
 							<a href="javascript:void()" class="font_a">换一张</a>
 						</div>
 					</div>
-					<div class="form_div first">
+					<div class="form_div fifth">
 						<div class="form_label"> </div>
 						<div class="form_input">
 							<div class="form_input_inner_submit">
@@ -281,6 +292,25 @@
 			$(".time_select li,.status_select li").on("click",function(){
 				$(this).parent().parent().addClass("hide");
 				$(this).addClass("selected");
+			});
+			$("input[name=password]").on("blur",function(){
+				var len=$(this).val().length;
+				console.log(len);
+				if(len<=6){
+					$(".low").click();
+				}
+				if(len>6&&len<=12){
+					$(".middle").click();
+				}
+				if(len>12&&len<=18){
+					$(".high").click();
+				}
+			});
+			$(".low,.middle,.high").on("click",function(){
+				$(".low").removeClass("checked");
+				$(".middle").removeClass("checked");
+				$(".high").removeClass("checked");
+				$(this).addClass("checked");
 			});
 		</script>
 	</body>

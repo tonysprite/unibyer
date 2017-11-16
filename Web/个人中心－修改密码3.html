@@ -2,9 +2,9 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8">
     
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>个人中心－修改密码1 </title>
+    <title>个人中心－修改密码3 </title>
 	<link href="../Public/css/ucenter_base.css" type="text/css" rel="stylesheet"/>	
-	<link href="../Public/css/change_pwd_1.css" type="text/css" rel="stylesheet"/>
+	<link href="../Public/css/change_pwd_3.css" type="text/css" rel="stylesheet"/>
 	</head>
 <body>
 <!--header start-->
@@ -156,48 +156,24 @@
 						修改登录密码
 					</div>	
 					<div class="process_bar_div">
-						<img src="../Public/image/process_bar.jpg"/>
+						<img src="../Public/image/process_bar_3.jpg"/>
 					</div>
 					<div class="form_div first">
-						<div class="form_label">已验证手机：</div>
-						<div class="form_input">135*****725</div>
-					</div>
-					<div class="form_div first">
-						<div class="form_label">请填写手机验证码：</div>
+						<div class="form_label"><img src="../Public/image/right_logo.jpg"></div>
 						<div class="form_input">
-							<div class="form_input_inner">
-								<input type="text" name="tel"/>
-							</div>						
-						</div>
-						<div class="form_input">
-							<div class="form_input_inner_btn font_normal">
-								获取短信验证码
-							</div>						
+							恭喜您，修改密码成功！					
 						</div>
 					</div>
-					<div class="form_div first">
-						<div class="form_label">验证码：</div>
-						<div class="form_input">
-							<div class="form_input_inner">
-								<input type="text" name="verifyCode"/>
-							</div>						
-						</div>
-						<div class="form_input">
-							<div class="form_input_inner_btn verify">
-								<img src="../Public/image/verify_code.jpg"/>
-							</div>						
-						</div>
-						<div class="form_input tips">
-							<span class="font_normal">看不清楚？</span>
-							<a href="javascript:void()" class="font_a">换一张</a>
-						</div>
-					</div>
-					<div class="form_div first">
+					<div class="form_div second">
 						<div class="form_label"> </div>
-						<div class="form_input">
-							<div class="form_input_inner_submit">
-								提    交
-							</div>						
+						<div class="form_input title">
+							最新安全级别评级			
+						</div>
+						<div class="form_input process_bar">
+							 <div class="current_process" style="width:80%"></div>
+						</div>
+						<div class="form_input level">
+							较高			
 						</div>
 					</div>
 				</div>
@@ -281,6 +257,25 @@
 			$(".time_select li,.status_select li").on("click",function(){
 				$(this).parent().parent().addClass("hide");
 				$(this).addClass("selected");
+			});
+			$("input[name=password]").on("blur",function(){
+				var len=$(this).val().length;
+				console.log(len);
+				if(len<=6){
+					$(".low").click();
+				}
+				if(len>6&&len<=12){
+					$(".middle").click();
+				}
+				if(len>12&&len<=18){
+					$(".high").click();
+				}
+			});
+			$(".low,.middle,.high").on("click",function(){
+				$(".low").removeClass("checked");
+				$(".middle").removeClass("checked");
+				$(".high").removeClass("checked");
+				$(this).addClass("checked");
 			});
 		</script>
 	</body>
