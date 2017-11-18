@@ -1,0 +1,85 @@
+.alert_box_div{
+	width:100%;
+	height:100%;
+	background:rgba(168,168,168,.5);
+	padding:0px;
+	margin:0px;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+.alert_box{
+	width:392px;
+	height:221px;
+	background-color:#c2c2c2;
+	position:absolute;
+	top:30%;
+	left:40%;
+
+}
+.alert_box_inner{
+	width:379px;
+	height:209px;
+	border:1px solid #b1b1b1;
+	margin:5px;
+}
+.alert_box_inner .header{
+	height:32px;
+	width:100%;
+	line-height:32px;
+}
+.alert_box_inner .header .left,.alert_box_inner .header .right{
+	color:#666667;
+	font-size:14px;
+}
+.alert_box_inner .header .left{
+	text-align:left;
+	padding-left:9px;
+	float:left;
+	width:30%;
+}
+.alert_box_inner .header .right{
+	text-align:right;
+	padding-right:13px;
+	float:right;
+	width:30%;
+}
+.alert_box_inner .header .right span{
+	cursor:pointer;
+}
+.alert_box_inner_body{
+	width:379px;
+	height:176px;
+	overflow:hidden;
+	background-color:#ffffff;
+}
+.alert_msg{
+	margin-top:49px;
+	margin-left:99px;
+	height:23px;
+	line-height:24px;
+}
+.alert_msg img{
+	vertical-align:middle;
+	margin:0px;
+	height:23px;
+}
+.alert_msg span{
+	margin-left:12px;
+	font-size:18px;
+	color:#000000;
+}
+.alert_close{
+	border:1px solid #dddddd;
+	width:75px;
+	height:28px;
+	background-color:#f3f2f2;
+	color:#515151;
+	font-size:14px;
+	text-align:center;
+	line-height:28px;
+	margin:auto;
+	margin-top:26px;
+	cursor:pointer;
+	border-radius:2px;
+}

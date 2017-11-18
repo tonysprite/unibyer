@@ -2,10 +2,9 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8">
     
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>个人中心－修改密码1 </title>
+    <title>个人中心－修改邮箱3 </title>
 	<link href="../Public/css/ucenter_base.css" type="text/css" rel="stylesheet"/>	
-	<link href="../Public/css/change_pwd_1.css" type="text/css" rel="stylesheet"/>
-	<link href="../Public/css/alert.css" type="text/css" rel="stylesheet"/>
+	<link href="../Public/css/change_pwd_3.css" type="text/css" rel="stylesheet"/>
 	</head>
 <body>
 <!--header start-->
@@ -154,51 +153,15 @@
 		<div class="content-inner-right-wrap">
 				<div class="right_inner_content">
 					<div class="right_inner_title">
-						修改登录密码
+						修改邮箱
 					</div>	
 					<div class="process_bar_div">
-						<img src="../Public/image/process_bar.jpg"/>
+						<img src="../Public/image/process_bar_mail_3.jpg"/>
 					</div>
 					<div class="form_div first">
-						<div class="form_label">已验证手机：</div>
-						<div class="form_input">135*****725</div>
-					</div>
-					<div class="form_div first">
-						<div class="form_label">请填写手机验证码：</div>
+						<div class="form_label"><img src="../Public/image/right_logo.jpg"></div>
 						<div class="form_input">
-							<div class="form_input_inner">
-								<input type="text" name="tel"/>
-							</div>						
-						</div>
-						<div class="form_input">
-							<div class="form_input_inner_btn font_normal">
-								获取短信验证码
-							</div>						
-						</div>
-					</div>
-					<div class="form_div first">
-						<div class="form_label">验证码：</div>
-						<div class="form_input">
-							<div class="form_input_inner">
-								<input type="text" name="verifyCode"/>
-							</div>						
-						</div>
-						<div class="form_input">
-							<div class="form_input_inner_btn verify">
-								<img src="../Public/image/verify_code.jpg"/>
-							</div>						
-						</div>
-						<div class="form_input tips">
-							<span class="font_normal">看不清楚？</span>
-							<a href="javascript:void()" class="font_a">换一张</a>
-						</div>
-					</div>
-					<div class="form_div first">
-						<div class="form_label"> </div>
-						<div class="form_input">
-							<div class="form_input_inner_submit">
-								提    交
-							</div>						
+							恭喜您，修改邮箱成功！				
 						</div>
 					</div>
 				</div>
@@ -242,29 +205,7 @@
                   +61 2 9299 5318</li>
 		</ul>
 	</div>
-		<div class="alert_box_div hidden">
-		<div class="alert_box">
-			<div class="alert_box_inner">
-				<div class="header">
-					<div class="left">
-						温馨提示
-					</div>	
-					<div class="right">
-						<span>×</span>
-					</div>	
-				</div>
-				<div class="alert_box_inner_body">
-					<div class="alert_msg">
-						<img src="../Public/image/alert_ok_logo.jpg"/>
-						<span>短信已经成功发送</span>
-					</div>
-					<div class="alert_close">关 闭</div>
-				</div>
-			</div>	
-		</div>
-	</div>
 		<script src="../Public/js/jquery-1.12.3.min.js"></script>
-			<script src="../Public/js/alert.js"></script>
 		<script>
 			var sub_menu_show=0;
 			$(".menu_left").on("click",function(){
@@ -304,6 +245,25 @@
 			$(".time_select li,.status_select li").on("click",function(){
 				$(this).parent().parent().addClass("hide");
 				$(this).addClass("selected");
+			});
+			$("input[name=password]").on("blur",function(){
+				var len=$(this).val().length;
+				console.log(len);
+				if(len<=6){
+					$(".low").click();
+				}
+				if(len>6&&len<=12){
+					$(".middle").click();
+				}
+				if(len>12&&len<=18){
+					$(".high").click();
+				}
+			});
+			$(".low,.middle,.high").on("click",function(){
+				$(".low").removeClass("checked");
+				$(".middle").removeClass("checked");
+				$(".high").removeClass("checked");
+				$(this).addClass("checked");
 			});
 		</script>
 	</body>

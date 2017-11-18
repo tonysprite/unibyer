@@ -127,6 +127,7 @@
 	width:134px;
 	line-height:36px;
 	text-align:center;
+	cursor:pointer;
 }
 .form_input_inner_btn.verify{
 	width:104px;
@@ -155,4 +156,9 @@
 	line-height:31px;
 	text-align:center;
 	cursor:pointer;
+}
+.form_div.last{
+	margin-top:20px;
+	color:#666667;
+	font-size:14px;
 }

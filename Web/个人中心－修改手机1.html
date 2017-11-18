@@ -5,6 +5,7 @@
     <title>个人中心－修改手机1 </title>
 	<link href="../Public/css/ucenter_base.css" type="text/css" rel="stylesheet"/>	
 	<link href="../Public/css/change_pwd_1.css" type="text/css" rel="stylesheet"/>
+	<link href="../Public/css/alert.css" type="text/css" rel="stylesheet"/>
 	</head>
 <body>
 <!--header start-->
@@ -241,7 +242,29 @@
                   +61 2 9299 5318</li>
 		</ul>
 	</div>
+		<div class="alert_box_div hidden">
+		<div class="alert_box">
+			<div class="alert_box_inner">
+				<div class="header">
+					<div class="left">
+						温馨提示
+					</div>	
+					<div class="right">
+						<span>×</span>
+					</div>	
+				</div>
+				<div class="alert_box_inner_body">
+					<div class="alert_msg">
+						<img src="../Public/image/alert_ok_logo.jpg"/>
+						<span>短信已经成功发送</span>
+					</div>
+					<div class="alert_close">关 闭</div>
+				</div>
+			</div>	
+		</div>
+	</div>
 		<script src="../Public/js/jquery-1.12.3.min.js"></script>
+		<script src="../Public/js/alert.js"></script>
 		<script>
 			var sub_menu_show=0;
 			$(".menu_left").on("click",function(){
