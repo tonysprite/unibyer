@@ -55,3 +55,32 @@
 .first_column img{
 	vertical-align:middle;
 }
+.fifth_column{
+	width:796px;
+	color:#2c2e83
+}
+.fifth_column.title{
+	font-size:18.74px;
+	color:#2c2e83
+}
+.fifth_column.desc{
+	color:inherit;
+}
+.bind_column{
+	background-color:#f06600;
+	color:#ffffff;
+	width:119px;
+	height:31px;
+	text-align:center;
+	line-height:31px;
+	cursor:pointer;
+}
+.unbind_column{
+	border:1px solid #dddddd;
+	width:104px;
+	height:30px;
+	text-align:center;
+	cursor:pointer;
+	line-height:30px;
+	border-radius:2px;
+}

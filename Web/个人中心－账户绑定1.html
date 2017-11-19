@@ -5,6 +5,7 @@
     <title>个人中心－帐号绑定 </title>
 	<link href="../Public/css/ucenter_base.css" type="text/css" rel="stylesheet"/>	
 	<link href="../Public/css/bind_1.css" type="text/css" rel="stylesheet"/>
+	<link href="../Public/css/alert.css" type="text/css" rel="stylesheet"/>
 	</head>
 <body>
 <!--header start-->
@@ -164,6 +165,14 @@
 						<div class="fourth_column" data-type='bind_qq'>绑定</div>
 						<div class="fourth_column hidden" data-type='bind_qq_close'>收起</div>
 					</div>
+					<div class="row bind_detail hidden" data-type='bind_qq'>
+						<div class="first_column">&nbsp;</div>
+						<div class="second_column fifth_column">绑定后，可以使用QQ帐号登录优尼拜尔购物</div>
+					</div>
+					<div class="row bind_detail hidden" data-type='bind_qq'>
+						<div class="first_column">&nbsp;</div>
+						<div class="second_column bind_column" data-type='bind_qq'>立即绑定</div>
+					</div>
 					<div class="row first">
 						<div class="first_column"><img src="../Public/image/email_logo.jpg"></div>
 						<div class="second_column">
@@ -173,6 +182,14 @@
 						<div class="fourth_column"  data-type='bind_email'>绑定</div>
 						<div class="fourth_column hidden" data-type='bind_email_close'>收起</div>
 					</div>
+					<div class="row bind_detail hidden" data-type='bind_email'>
+						<div class="first_column">&nbsp;</div>
+						<div class="second_column fifth_column">绑定后，可以使用邮箱登录优尼拜尔购物</div>
+					</div>
+					<div class="row bind_detail hidden" data-type='bind_email'>
+						<div class="first_column">&nbsp;</div>
+						<div class="second_column bind_column" data-type='bind_email'>立即绑定</div>
+					</div>
 					<div class="row first">
 						<div class="first_column"><img src="../Public/image/wechat_logo.jpg"></div>
 						<div class="second_column">
@@ -180,8 +197,37 @@
 						</div>
 						<div class="third_column">已绑定</div>
 						<div class="fourth_column hidden"  data-type='bind_wechat'>绑定</div>
-						<div class="fourth_column hidden" data-type='bind_wechat_close'>收起</div>
-					</div>					
+						<div class="fourth_column" data-type='unbind_wechat_close'>收起</div>
+					</div>		
+					<div class="row bind_detail hidden" data-type='bind_wechat'>
+						<div class="first_column">&nbsp;</div>
+						<div class="second_column fifth_column">绑定后，可以使用微信帐号登录优尼拜尔购物</div>
+					</div>
+					<div class="row bind_detail hidden" data-type='bind_wechat'>
+						<div class="first_column">&nbsp;</div>
+						<div class="second_column bind_column" data-type='bind_wechat'>立即绑定</div>
+					</div>	
+
+					<div class="row unbind_detail" data-type='unbind_wechat'>
+						<div class="first_column">&nbsp;</div>
+						<div class="second_column fifth_column desc">您正在使用的优尼拜尔账号关联1个微信账号</div>
+					</div>
+					<div class="row unbind_detail" data-type='unbind_wechat'>
+						<div class="first_column">&nbsp;</div>
+						<div class="second_column fifth_column title">请牢记该优尼拜尔账号：18601225555_P</div>
+					</div>
+					<div class="row unbind_detail" data-type='unbind_wechat'>
+						<div class="first_column">&nbsp;</div>
+						<div class="second_column fifth_column desc">1、解绑后需要使用此账号进行登录，解绑后的账号仍可正常使用，订单等信息不会丢失，忘记密码请在登录页面找回密码；</div>
+					</div>
+					<div class="row unbind_detail" data-type='unbind_wechat'>
+						<div class="first_column">&nbsp;</div>
+						<div class="second_column fifth_column desc">2、该账号下关联微信账号将全部解绑。</div>
+					</div>
+					<div class="row unbind_detail" data-type='unbind_wechat'>
+						<div class="first_column">&nbsp;</div>
+						<div class="second_column unbind_column" data-type='unbind_wechat'>解除绑定</div>
+					</div>	
 				</div>								
 		</div>
 	</div>
@@ -245,7 +291,7 @@
 		</div>
 	</div>
 		<script src="../Public/js/jquery-1.12.3.min.js"></script>
-
+		<script src="../Public/js/alert.js"></script>
 		<script>
 			var sub_menu_show=0;
 			$(".menu_left").on("click",function(){
@@ -285,6 +331,82 @@
 			$(".time_select li,.status_select li").on("click",function(){
 				$(this).parent().parent().addClass("hide");
 				$(this).addClass("selected");
+			});
+			$(".fourth_column").on("click",function(){
+				var type=$(this).data("type");
+				$(this).addClass("hidden");
+				console.log(type.indexOf('close'));
+				var operation="bind";
+				if(type.indexOf('close')>1){
+					var type_operation_arr=type.split("_close");
+					
+					console.log(type_operation_arr[0],111,operation);
+					type=type_operation_arr[0];
+					if(type.indexOf("unbind")<0){
+						$(this).prev(".fourth_column").removeClass("hidden");
+					}else{
+						operation="unbind";
+					}
+					hide_div(type,operation);
+				}else{
+					$(this).next().removeClass("hidden");
+					show_div(type,operation);
+				}
+				
+				console.log(type);
+
+			});
+			function show_div(type,operation){
+				
+				$("."+operation+"_detail").each(function(){
+					var curr_type=$(this).data("type");
+					if(curr_type==type){
+						$(this).removeClass("hidden");
+					}
+				});
+			}
+			function hide_div(type,operation){
+				$("."+operation+"_detail").each(function(){
+					var curr_type=$(this).data("type");
+					console.log(curr_type);
+					if(curr_type==type){
+						$(this).addClass("hidden");
+					}
+				});
+			}
+			$(".bind_column").on("click",function(){
+				var curr_type=$(this).data("type");
+				console.log(curr_type);
+				var msg="您已成功绑定QQ帐号";
+				switch(curr_type){
+					case "bind_qq":
+					break;
+					case "bind_wechat":
+					msg="您已成功绑定微信帐号";
+					break;
+					case "bind_email":
+					msg="您已成功绑定邮箱帐号";
+					break;
+				}
+				$(".alert_msg span").html(msg);
+				show_alert();
+			});
+			$(".unbind_column").on("click",function(){
+				var curr_type=$(this).data("type");
+				console.log(curr_type);
+				var msg="您已成功解绑QQ帐号";
+				switch(curr_type){
+					case "unbind_qq":
+					break;
+					case "unbind_wechat":
+					msg="您已成功解绑微信帐号";
+					break;
+					case "unbind_email":
+					msg="您已成功解绑邮箱帐号";
+					break;
+				}
+				$(".alert_msg span").html(msg);
+				show_alert();
 			});
 		</script>
 	</body>

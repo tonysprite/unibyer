@@ -12,9 +12,9 @@
 	width:392px;
 	height:221px;
 	background-color:#c2c2c2;
-	position:absolute;
-	top:30%;
-	left:40%;
+	position:fixed;
+	top:20%;
+	left:35%;
 
 }
 .alert_box_inner{
