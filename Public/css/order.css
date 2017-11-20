@@ -57,6 +57,7 @@
 	line-height:25px;
 	color:#ffffff;
 	font-size:14px;
+	cursor:pointer;
 }
 .order_tips{
 	font-size:13px;
@@ -275,7 +276,7 @@ th[Attributes Style] {
 }
 #orderinfo .mc dl {
     padding: 10px 5px;
-    border-top: 1px solid #ededed;
+    border-top: 1px dashed #ededed;
 }
 #orderinfo .p-list {
     overflow: hidden;
@@ -373,4 +374,7 @@ a {
 .buy_more_btn{
 	margin-top:6px;
 	display:block;
+}
+dt{
+	margin-bottom:10px;
 }
