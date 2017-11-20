@@ -1,0 +1,376 @@
+.order_container{
+	background-color:#ffffff;
+}
+.order_title{
+	margin-top:30px;
+	margin-left:23px;
+}
+.first_title{
+	font-size:17px;
+	color:#898989
+}
+.second_title{
+	font-size:14px;
+	color:#000000;
+	margin-left:9px
+}
+.order_status_info{
+	margin-left:14px;
+	margin-top:16px;
+	border:1px solid #fcd475;
+	width:1145px;
+	height:81px;
+	overflow:hidden;
+	background-color:#fffeeb;
+}
+.order_status_info .up{
+	height:40px;
+	line-height:40px;
+	border-bottom:1px dashed #fcd475;
+	padding-left:14px;
+}
+.order_status_info .down{
+	height:40px;
+	line-height:40px;
+	color:#000000;
+	opacity:0.8;
+	font-size:13px;
+	padding-left:14px;
+}
+.order_status_info .up .left{
+	float:left;
+	font-size:14px;
+	color:#000000;
+}
+.order_status_info .up .left span{
+	color:#6fba2c;
+}
+.order_status_info .up .right{
+	float:right;
+	width:56px;
+	height:24px;
+	border-radius:2px;
+	background-color:#ec8100;
+	margin-top:8px;
+	margin-right:11px;
+	text-align:center;
+	line-height:25px;
+	color:#ffffff;
+	font-size:14px;
+}
+.order_tips{
+	font-size:13px;
+	color:#000000;
+	opacity:0.8;
+	margin-top:12px;
+	margin-left:29px;
+}
+.order_tips span{
+	color:#ff0000
+}
+#odlist, #orderinfo, #orderstate, #ordertrack, #process {
+    color: #333;
+}
+#process {
+    margin: 0 auto;
+    padding: 40px 0 80px;
+}
+.section4 {
+    width: 706px;
+}
+#process .node {
+    width: 13px;
+}
+#process .node, #process .proce {
+    float: left;
+    position: relative;
+    height: 13px;
+    background-image: url(../image/bg_state.jpg);
+    background-repeat: no-repeat;
+}
+.node.ready {
+    background-position: -150px 0;
+}
+#process .node ul {
+    z-index: 1;
+    width: 318px;
+    margin-left: -152px;
+}
+#process ul {
+    position: absolute;
+    margin-top: -38px;
+    text-align: center;
+}
+#process .tx1 {
+    height: 36px;
+    margin-bottom: 16px;
+}
+#process .tx3 {
+    color: #999;
+    line-height: 15px;
+}
+#process .proce {
+    width: 150px;
+    border: solid #fff;
+    border-width: 0 5px;
+}
+#odlist, #orderinfo, #orderstate, #ordertrack, #process {
+    color: #333;
+}
+.user_the_library {
+    padding: 20px;
+    background-color: #fff;
+    font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+}
+.node.wait {
+    background-position: -150px -40px;
+}
+.proce.wait {
+    background-position: 0 -40px;
+}
+.node.ready {
+    background-position: -150px 0;
+}
+.proce.ready {
+    background-position: 0 0;
+}
+.hide{
+	display:none;
+}
+#odlist, #orderinfo, #orderstate, #ordertrack, #process {
+    color: #333;
+}
+#ordertrack {
+    border: 1px solid #eed97c;
+    position: relative;
+    overflow: visible;
+}
+.m, .sm {
+    margin-bottom: 10px;
+}
+.m, .mb, .mc, .mt, .sm, .smb, .smc, .smt {
+    overflow: hidden;
+    zoom: 1;
+}
+#ordertrack .tab {
+    overflow: hidden;
+}
+#ordertrack .tab {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #eed97c;
+    background: #fffceb;
+    overflow: visible;
+}
+.tab {
+    overflow: hidden;
+    zoom: 1;
+}
+#odlist, #orderinfo, #orderstate, #ordertrack, #process {
+    color: #333;
+}
+#ordertrack .tab li {
+    border-right: 1px solid #eed97c;
+    cursor: pointer;
+}
+.tab a, .tab li, .tab-item {
+    float: left;
+    text-align: center;
+}
+
+#ordertrack .tab .curr h2 {
+    position: relative;
+    height: 31px;
+    background: #fff;
+    color: #333;
+}
+
+h2, h3 {
+    font-size: 14px;
+}
+#ordertrack .tab li {
+    border-right: 1px solid #eed97c;
+    cursor: pointer;
+}
+#ordertrack .tab li h2 {
+    float: left;
+    height: 30px;
+    padding: 0 8px;
+    color: #999;
+	margin:0px;
+}
+#ordertrack .tabcon {
+    padding: 5px 13px;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p, th, td {
+    margin: 0;
+    padding: 0;
+}
+#ordertrack th strong {
+    display: block;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #dbdbdb;
+    text-align: left;
+}
+strong, b {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+th {
+    font-weight: bold;
+    text-align: -internal-center;
+}
+th[Attributes Style] {
+    width: 15%;
+}
+#orderinfo, #ordermess {
+    border: 1px solid #dadada;
+    padding: 0 5px 10px;
+    background: #ededed;
+    overflow: visible;
+}
+#orderinfo .mt, #ordermess .mt {
+    padding: 0 8px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+#orderinfo .mc, #ordermess .mc {
+    padding: 5px 8px;
+    background: #fff;
+    overflow: visible;
+}
+#orderinfo .total {
+    height: 1%\9;
+    display: block;
+}
+#orderinfo .total {
+    overflow: visible;
+}
+#orderinfo .total {
+    padding: 15px 10px 0;
+}
+#orderinfo .total {
+    zoom: 1;
+    font-family: arial;
+}
+
+
+#orderinfo .total li {
+    overflow: hidden;
+    line-height: 20px;
+}
+#orderinfo .mc dl.fore {
+    border-top: 0;
+}
+#orderinfo .mc dl {
+    padding: 10px 5px;
+    border-top: 1px solid #ededed;
+}
+#orderinfo .p-list {
+    overflow: hidden;
+    margin-right: -1px;
+    border-left: 1px solid #dedede;
+}
+#orderinfo .p-list table {
+    border-collapse: collapse;
+    margin-left: -1px;
+    border: solid #dedede;
+    border-width: 0 1px;
+}
+#orderinfo .p-list th {
+    padding: 5px;
+    background: #f0f0f0;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    border-left: 1px solid #f0f0f0;
+    font-weight: 400;
+}
+#orderinfo .p-list td {
+    padding: 5px;
+    background: #fff;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    border-left: 1px solid #f0f0f0;
+    text-align: center;
+}
+#orderinfo .total ul {
+    float: right;
+    padding: 0 20px 10px 0;
+    overflow: hidden;
+    font-size: 14px;
+}
+#orderinfo .total li {
+    overflow: hidden;
+    line-height: 20px;
+}
+#orderinfo .total li span {
+    float: left;
+    width: 240px;
+    text-align: right;
+}
+#orderinfo .total .extra {
+    float: right;
+    padding: 10px 20px 0 0;
+    border-top: 1px solid #ccc;
+    font-size: 16px;
+    font-weight: 700;
+}
+.flk04 a:link, .flk04 a:visited, .ftx04, a.flk04:link, a.flk04:visited {
+    color: red;
+}
+#orderinfo .total:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clear, .clr {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+}
+#orderinfo .total .extra b {
+    font-size: 24px;
+}
+a:hover{
+    color: #5d9d39;
+    text-decoration: underline;
+}
+.img-list .img-box {
+    border: 1px solid #e1e1e1;
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+}
+a {
+    color: #3f3e3e;
+    text-decoration: none;
+    outline: 0;
+}
+#orderinfo .p-list .operation_td{
+	padding:20px 0 20px 0;
+}
+.operation_td a{
+	color:#415a9d;
+	font-size:13px;
+}
+.buy_more_btn{
+	margin-top:6px;
+	display:block;
+}

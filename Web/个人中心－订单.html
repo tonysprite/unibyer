@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>个人中心－订单 </title>
+	<link href="../Public/css/ucenter_base.css" type="text/css" rel="stylesheet"/>	
+	<link href="../Public/css/order.css" type="text/css" rel="stylesheet"/>
+	<link href="../Public/css/alert.css" type="text/css" rel="stylesheet"/>
+	</head>
+<body>
+<!--header start-->
+<div class="header">
+	<div class="header_div">
+		<span class="wecome header_item">送至：
+		<select name="header_province">
+			<option value="北京">北京</option>
+		</select>
+		</span>
+		<span class="header_item logout">haha&nbsp<a href="#">退出</a></span>
+		<span class="header_item">|</span>
+		<a class="header_item">我的订单</a>
+		<a class="header_item">我的优尼拜尔</a>
+		<span class="header_item">购物车<a href="#">0</a>件</span>
+		<span class="header_item">|</span>
+		<a class="header_item">会员俱乐部</a>
+		<a class="header_item header_item_special">客户服务/服务中心</a><span>|&nbsp;</span><a>客户服务/服务中心</a>
+		<a class="header_item">关注优尼拜尔</a>
+		<a class="header_item">网站导航</a>
+	</div>
+</div>
+<!--header end-->
+<!--content start-->
+<div class="container">
+	<!--search start -->
+	<div class="logo_div">
+		<div class="logo_div_left">
+			<div class="logo_img">
+				<img src="../Public/image/1.log.jpg" />
+			</div>
+		</div>
+		<div class="logo_div_right">
+			<div class="top_search_div">
+				<input type="text" class="top_search_input" placeholder="蜂胶乳" />
+				<input type="button" class="top_search_btn" value="搜索"/>
+			</div>
+		</div>
+		<div class="logo_list">
+				<ul class="logo_item">
+					<li><img src="../Public/image/real_logo.png"/></li>
+					<li>
+						正品保障
+					</li>
+				</ul>
+				<ul class="logo_item">
+					<li><img src="../Public/image/mail_free_logo.png"/></li>
+					<li>
+						满99包邮
+					</li>
+				</ul>
+		</div>
+	</div>
+	<!--search end -->
+	<!-- menu start -->
+	<div class="menu_div">
+		<div class="menu_inner_div">
+			<div class="menu_left">
+				全部商品分类<img src="../Public/image/down.png"/>
+			</div>
+			<div class="menu_main">
+				<a href="#">首页</a>
+				<span class="space">|</span>
+				<a href="#">XXXXXX</a>
+				<span class="space">|</span>
+				<a href="#">XXXXXX</a>
+				<span class="space">|</span>
+				<a href="#" class="active">XXXXXX</a>
+				<span class="space">|</span>
+				<a href="#">XXXXXX</a>
+			</div>
+			<div class="menu_right">
+				<a href="#" >优尼拜尔热线</a>
+				<a href="#" >400 600 6503</a>
+			</div>
+		</div>
+	</div>
+	<div class="menu_left_sub">
+		<div class="menu_left_sub_inner">
+		<ul>
+			<li><a href="#" class="font_white">澳洲牛肉</a></li>
+			<li><a href="#" class="font_white">澳洲牛肉</a></li>
+		</ul>
+		</div>
+	</div>
+	<!-- menu end -->
+	<div class="content-inner-wrap">
+	<!-- content-inner start-->
+	<div class="content-inner order_container">
+		<div class="order_title">
+			<span class="first_title">我的优尼拜尔</span>
+			<span class="second_title">> 订单中心 > 订单</span>
+		</div>
+		<div class="order_status_info">
+			<div class="up">
+				<div class="left">订单号：18810428362    状态：<span>完成</span></div>
+				<div class="right">评价</div>
+			</div>
+			<div class="down">尊敬的客户，您的订单已完成</div>
+		</div>
+		<div class="order_tips">
+			重要提醒：优尼拜尔不会以<span>订单异常、系统升级</span>为由，要求您点击任何网址链接进行退款操作。
+		</div>
+		<div class="user_the_library">
+			<div id="process" class="section4">
+				<div class="node fore ready">
+					<ul>
+						<li class="tx1">&nbsp;</li>
+						<li class="tx2">提交订单</li>
+						<li id="track_time_0" class="tx3">2017-11-13 <br> 15:52:28</li>
+					</ul>
+				</div>
+						<div class="proce ready">
+					<ul>
+						<li class="tx1">&nbsp;</li>
+					</ul>
+				</div>
+				<div class="node fore ready">
+					<ul>
+						<li class="tx1">&nbsp;</li>
+						<li class="tx2">商品出库</li>
+						<li id="track_time_1" class="tx3">2017-11-14 <br> 15:52:28</li>
+					</ul>
+				</div>
+				<div class="proce wait">
+					<ul>
+						<li class="tx1">&nbsp;</li>
+					</ul>
+				</div>
+				<div class="node wait">
+					<ul>
+						<li class="tx1">&nbsp;</li>
+						<li class="tx2">等待收货</li>
+						<li id="track_time_5" class="tx3"></li>
+					</ul>
+				</div>
+						<div class="proce wait">
+					<ul>
+						<li class="tx1">&nbsp;</li>
+					</ul>
+				</div>
+				<div class="node wait">
+					<ul>
+						<li class="tx1" id="promise_time_2"></li>
+						<li class="tx2">完成</li>
+						<li class="tx3">&nbsp;</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="m" id="ordertrack">
+				<ul class="tab">
+					<li class="curr" data-id="1">
+						<h2> 订单跟踪</h2>
+					</li>
+					<li class="" data-id="2">
+						<h2> 付款信息</h2>
+					</li>
+				</ul>
+				<div class="clr"></div>
+				<div class="mc tabcon" id="tabcon1"> 
+					<!--订单跟踪-->
+					<input type="hidden" value="2016-03-24 16:45:53" id="datesubmit-13056821608">
+					<table cellpadding="0" cellspacing="0" width="100%">
+						<tbody id="tbody_track">
+							<tr>
+								<th width="15%"><strong>处理时间</strong></th>
+								<th width="50%"><strong>处理信息</strong></th>
+								<th width="35%"><strong>操作人</strong></th>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>2016-04-08 15:03:55</td>
+								<td>您提交了订单，请等待系统确认</td>
+								<td>客户</td>
+							</tr>
+												<tr>
+								<td>2016-04-08 19:06:48</td>
+								<td>廊坊市</td>
+								<td>97769353</td>
+							</tr>
+												<tr>
+								<td>2016-04-10 02:21:25</td>
+								<td>武汉市</td>
+								<td>98460110</td>
+							</tr>
+												<tr>
+								<td>2016-04-10 10:53:58</td>
+								<td>荆州市</td>
+								<td>98635656</td>
+							</tr>
+												<tr>
+								<td>2016-04-11 08:19:00</td>
+								<td>荆州市</td>
+								<td>99042847</td>
+							</tr>
+												<tr>
+								<td>2016-04-11 10:23:35</td>
+								<td>荆州市</td>
+								<td>99112894</td>
+							</tr>
+												<tr>
+								<td>2016-04-11 10:24:53</td>
+								<td>荆州市</td>
+								<td>99114653</td>
+							</tr>
+												
+						</tbody>
+					   
+					</table>
+					<div class="extra"> <span id="jdshfs"> 送货方式：普通快递 </span><span>承运人：顺丰快递</span><span>货运单号：976774440441</span><span id="linkUrl"><span class="flk13"></span></span> </div>
+							</div>
+				<div class="mc tabcon hide" id="tabcon2"> 
+					<!--付款信息-->
+					<table cellpadding="0" cellspacing="0" width="100%">
+						<tbody>
+							<tr>
+								<td width="30%" id="daiFuName"> 付款方式：货到付款</td>
+								<td width="30%" id="daiFuPeople"></td>
+							</tr>
+							<tr>
+								<td> 商品金额：￥200.00</td>
+								<td> 运费金额：￥0.00</td>
+								<td> 优惠券：￥100.00</td>
+							</tr>
+							<tr>
+								<td> 折扣：￥0.00</td>
+							</tr>
+							<tr>
+								<td> 应支付金额：￥100.00</td>
+							</tr>
+												<tr>
+								<td>付款于 2016-04-11 00:00:00</td>
+							</tr>
+											</tbody>
+					</table>
+					<div class="tb-ul"></div>
+				</div>
+			</div>
+			
+			<div class="m" id="orderinfo">
+				<div class="mt"> <strong>订单信息</strong></div>
+				<div class="mc"> 
+					
+					<!--顾客信息-->
+					<dl class="fore">
+						<dt>收货人信息</dt>
+						<dd>
+							<ul>
+								<li>收&nbsp;货&nbsp;人：李耀华</li>
+								<li>地&nbsp;&nbsp;&nbsp;&nbsp;址：湖北省荆州市荆州区湖北紫电电气西环路一号</li>
+								<li>手机号码：15586****55</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>支付及配送方式</dt>
+						<dd>
+							<ul>
+								<li>支付方式：货到付款</li>
+								<li>运&nbsp;&nbsp;&nbsp;&nbsp;费：￥0.00</li>
+							</ul>
+						</dd>
+					</dl>
+				   
+					
+					<!--商品-->
+					<dl>
+						<dt> <span class="i-mt">商品清单</span>
+							<div id="fquan" class="fquan">
+								<div id="eventName"> </div>
+								<div class="prompt p-fquan" id="couponListShow">
+									<div class="pc" id="couponList"> </div>
+								</div>
+							</div>
+							<div class="clr"></div>
+						</dt>
+						<dd class="p-list">
+							<table cellpadding="0" cellspacing="0" width="100%">
+								<tbody>
+									<tr>
+										<th width="10%"> 商品编号 </th>
+										<th width="12%"> 商品图片 </th>
+										<th width="50%"> 商品名称 </th>
+										<th width="10%"> 乐寿价 </th>
+										<th width="7%"> 商品数量 </th>
+										<th width="11%">  操作 </th>
+									</tr>
+																<tr>
+										<td>LS000043</td>
+										<td><div class="img-list"> <a class="img-box" target="_blank" href="goods.php?id=43">
+										<img width="50" height="50" src="../Public/image/no_picture.gif" title=""> </a> </div></td>
+										<td><div class="al fl"> <a class="flk13" target="_blank" href="#">新西兰麦卢卡蜂蜜</a> </div>
+											<div class="clr"></div>
+											<div id="coupon_10184106963" class="fl"></div></td>
+										<td><span class="ftx04">￥200.00</span></td>
+										<td>1</td>
+										<td class="operation_td"><a href="#">评价</a>|<a href="#">晒单</a></br><a href="#">申请返修/退换</a><a href="#" class="buy_more_btn"><img src="../Public/image/buy_more_btn.jpg"/></a> </td>
+									</tr>
+															</tbody>
+							</table>
+						</dd>
+					</dl>
+					
+					<div id="barcode">
+						<ul id="sn_list" class="hide">
+						</ul>
+					</div>
+
+					<input type="hidden" id="venderIdListStr" value="43614,43614">
+					<div id="yunFeiXian"> </div>
+				</div>
+				<!--金额-->
+				<div class="total">
+					<ul>
+						<li><span>总商品金额：</span>￥200.00</li>
+						<li><span> - 折&nbsp;&nbsp;&nbsp;扣：</span>￥0.00</li>
+						<li><span> - 优惠券：</span>￥100.00</li>
+						<li><span> + 运&nbsp;&nbsp;&nbsp;费：</span>￥0.00</li>
+					</ul>
+					<span class="clr">ad</span> <span style="color:#EDEDED;"></span>
+					<div class="extra"> 应付总额：<span class="ftx04"><b>￥100.00</b></span> </div>
+				</div>
+
+				<!--进度条预计功能使用-->
+				<input type="hidden" id="orderStatus" value="15">
+				<input type="hidden" id="orderType" value="22">
+				<input type="hidden" id="orderStoreId" value="0">
+				<input type="hidden" id="pickDate" value="1458748800536">
+			</div>
+		</div>
+	</div>
+	<!-- content-inner end-->
+	</div>
+</div>
+<!--content end-->
+		<div class="banner9">
+		<div class="banner9_title">友情连接</div>
+		<div class="banner9_friend_link">
+			<a href="#">中国中纺</a>
+			<a href="#">国贸中心</a>
+			<a href="#" class="center_button">国资委</a>
+			<a href="#">时尚芭莎</a>
+		</div>
+	</div>
+	<div class="header0">
+		<input type="text" name="search_input" class="input" placeholder="通讯地址"/>
+		<input type="button" name="search_btn" value="搜索" class="search_btn"/>
+	</div>
+	<div class="footer">
+		<ul class="link_list">
+			<li><a href="#">我们的故事</a></li>
+			<li><a href="#">UNIBALE商城</a></li>
+			<li><a href="#">用户评价</a></li>
+			<li><a href="#">去哪买</a></li>
+			<li><a href="#">视频</a></li>
+			<li><a href="#">美文分享</a></li>
+		</ul>
+		<ul class="introduce">
+			<li><a href="#">联系我们</a></li>
+			<li>&nbsp;</li>
+			<li><a href="#">优你拜尔食品有限公司</a></li>
+			<li><a href="#">UNIBALE FOOD PTY.LTD.</a></li>
+			<li><a href="#">地址：Level 8, 33 York St, Sydney NSW</br>
+2000, Australia.</a></li>
+			<li><a href="#">电子邮箱：yilongshan@qq.com</a></li>
+			<li><a href="#">联系电话：+61 2 9299 7318</a></li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>+61 2 9299 5318</a></li>
+		</ul>
+	</div>
+		<div class="alert_box_div hidden">
+		<div class="alert_box">
+			<div class="alert_box_inner">
+				<div class="header">
+					<div class="left">
+						温馨提示
+					</div>	
+					<div class="right">
+						<span>×</span>
+					</div>	
+				</div>
+				<div class="alert_box_inner_body">
+					<div class="alert_msg">
+						<img src="../Public/image/alert_ok_logo.jpg"/>
+						<span>短信已经成功发送</span>
+					</div>
+					<div class="alert_close">关 闭</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+		<script src="../Public/js/jquery-1.12.3.min.js"></script>
+		<script src="../Public/js/alert.js"></script>
+		<script>
+			var sub_menu_show=0;
+			$(".menu_left").on("click",function(){
+				if(sub_menu_show){
+				$(".menu_left_sub").hide();
+				sub_menu_show=0;
+				}else{
+				$(".menu_left_sub").show();
+				sub_menu_show=1;
+				}
+			});
+			$(".normal").on("click",function(){
+				if($(this).next().hasClass("hidden")){
+					$(this).next().removeClass("hidden");
+				}else{
+					$(this).next().addClass("hidden");
+				}
+			});
+			$(".product_item").on("click",function(){
+				$(".product_item").removeClass("active");
+				$(this).addClass("active");
+			});
+			$(".all_order").on("click",function(){
+				if($(".select_div").hasClass("hide")){
+					$(".select_div").removeClass("hide");
+				}else{
+					$(".select_div").addClass("hide");
+				}
+			});
+			$(".order_status").on("click",function(){
+				if($(".status_div").hasClass("hide")){
+					$(".status_div").removeClass("hide");
+				}else{
+					$(".status_div").addClass("hide");
+				}
+			});
+			$(".time_select li,.status_select li").on("click",function(){
+				$(this).parent().parent().addClass("hide");
+				$(this).addClass("selected");
+			});
+			$(".fourth_column").on("click",function(){
+				var type=$(this).data("type");
+				$(this).addClass("hidden");
+				console.log(type.indexOf('close'));
+				var operation="bind";
+				if(type.indexOf('close')>1){
+					var type_operation_arr=type.split("_close");
+					
+					console.log(type_operation_arr[0],111,operation);
+					type=type_operation_arr[0];
+					if(type.indexOf("unbind")<0){
+						$(this).prev(".fourth_column").removeClass("hidden");
+					}else{
+						operation="unbind";
+					}
+					hide_div(type,operation);
+				}else{
+					$(this).next().removeClass("hidden");
+					show_div(type,operation);
+				}
+				
+				console.log(type);
+
+			});
+			function show_div(type,operation){
+				
+				$("."+operation+"_detail").each(function(){
+					var curr_type=$(this).data("type");
+					if(curr_type==type){
+						$(this).removeClass("hidden");
+					}
+				});
+			}
+			function hide_div(type,operation){
+				$("."+operation+"_detail").each(function(){
+					var curr_type=$(this).data("type");
+					console.log(curr_type);
+					if(curr_type==type){
+						$(this).addClass("hidden");
+					}
+				});
+			}
+			$(".bind_column").on("click",function(){
+				var curr_type=$(this).data("type");
+				console.log(curr_type);
+				var msg="您已成功绑定QQ帐号";
+				switch(curr_type){
+					case "bind_qq":
+					break;
+					case "bind_wechat":
+					msg="您已成功绑定微信帐号";
+					break;
+					case "bind_email":
+					msg="您已成功绑定邮箱帐号";
+					break;
+				}
+				$(".alert_msg span").html(msg);
+				show_alert();
+			});
+			$(".unbind_column").on("click",function(){
+				var curr_type=$(this).data("type");
+				console.log(curr_type);
+				var msg="您已成功解绑QQ帐号";
+				switch(curr_type){
+					case "unbind_qq":
+					break;
+					case "unbind_wechat":
+					msg="您已成功解绑微信帐号";
+					break;
+					case "unbind_email":
+					msg="您已成功解绑邮箱帐号";
+					break;
+				}
+				$(".alert_msg span").html(msg);
+				show_alert();
+			});
+			
+			$(".tab li").on("click",function(){
+				var tab=$(this).data("id");
+				$(".tab li").each(function(){
+					$(this).removeClass("curr");
+					var tmp_tab=$(this).data("id");
+					$("#tabcon"+tmp_tab).addClass("hide");
+				});
+				$(this).addClass("curr");
+				$("#tabcon"+tab).removeClass("hide");
+				
+			});
+		</script>
+	</body>
+</html>
